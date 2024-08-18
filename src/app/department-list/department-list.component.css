@@ -1,0 +1,7 @@
+.course-list {
+    cursor: pointer;
+}
+
+.items li.selected {
+    color: blue;
+}

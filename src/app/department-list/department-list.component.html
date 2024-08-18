@@ -1,0 +1,12 @@
+<div>
+  <h2>Departments</h2>
+  <ul class="items">
+    <li class="course-list"
+      [class.selected]="isSelected(departments)"
+      *ngFor="let dept of departments"
+      [routerLink]="['/departments', dept.id]"
+    >
+      {{ dept.id }}&nbsp;{{ dept.name }}
+  </li>
+  </ul>
+</div>
