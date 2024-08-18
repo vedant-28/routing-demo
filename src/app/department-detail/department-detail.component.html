@@ -1,6 +1,13 @@
 <div>
     <span>You have selected deprtment with id: {{departmentId}}</span><br/><br/><br/>
-    <a (click)="goPrevious()">Previous</a>&nbsp;&nbsp;
-    <a (click)="goNext()">Next</a><br/><br/>
+
+    <div>
+        <button (click)="showOverview()">Overview</button>&nbsp;
+        <button (click)="showContact()">Contact</button>&nbsp;
+    </div><br/>
+    <router-outlet></router-outlet>
+
+    <button (click)="goPrevious()">Previous</button>&nbsp;&nbsp;
+    <button (click)="goNext()">Next</button><br/><br/>
     <button (click)="goToDepartments()">Back</button>
 </div>
